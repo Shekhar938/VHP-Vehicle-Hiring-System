@@ -1,0 +1,107 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="CustomerMasterPage.master.cs" Inherits="CustomerSection_CustomerMasterPage" %>
+<%@ Register Src="CustomerUserControl/ucHeader.ascx" TagName="ucHeader" TagPrefix="uc3" %>
+<%@ Register Src="CustomerUserControl/ucFooter.ascx" TagName="ucFooter" TagPrefix="uc4" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<%--<head>
+    <style type="text/css">
+        .style2
+        {
+            width: 746px;
+        }
+    </style>
+</head>--%>
+<head runat="server">
+    <title>SaddiGaddi</title>
+    <link href="../App_Themes/vehicle.css" rel="stylesheet" type="text/css" />
+    
+    <script language ="javascript" type ="text/jscript" >
+    function onlyNumbers(evt)
+{
+    var e = event || evt;
+    var charCode = e.which || e.keyCode;
+	if ((charCode > 47 && charCode < 58))
+    return true;		             
+    else
+    return false ;		                            
+}
+function OnlyChars(evt)
+{
+    var e = event || evt;
+    var charCode = e.which || e.keyCode;
+	if ((charCode > 64 && charCode < 91)||(charCode > 96 && charCode < 123) || charCode==32)
+    return true;		             
+    else
+    return false ;	
+}
+function onlyNumbersdot(evt)
+{
+    var e = event || evt;
+    var charCode = e.which || e.keyCode;
+	if (charCode > 47 && charCode < 58 || charCode==46)
+    return true;		             
+    else
+    return false ;		                            
+}
+function onlyNumbershifen(evt)
+{
+    var e = event || evt;
+    var charCode = e.which || e.keyCode;
+	if ((charCode > 47 && charCode < 58 || charCode==45))
+    return true;		             
+    else
+    return false ;		                            
+}
+function onlyNumbersUnderScore(evt)
+{
+    var e = event || evt;
+    var charCode = e.which || e.keyCode;
+	if ((charCode > 47 && charCode < 58 || charCode==95))
+    return true;		             
+    else
+    return false ;		                            
+}
+    </script>
+</head>
+<body bgcolor="green">
+    <form id="form1" runat="server">
+  <div>
+  <table width="1000px" align="center" style="" bgcolor="white">
+  <tr>
+ <td>
+  <table >
+       
+        <tr>
+            <td valign="top">
+                <asp:Image ID="Image1" runat="server" /><img alt="" src="../ImageRepositry/IMAGE1.bmp" 
+                    width="1000px" height="86px" /></td>
+        </tr>
+              <tr>
+            <td width="1000px">
+               <uc3:ucHeader ID="UcHeader1" runat="server" />
+            </td>
+        </tr>
+        <tr>
+            <td  width="1000px">
+            
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+               
+            </td>
+        </tr>
+        <tr>
+            <td width="966px">
+               <uc4:ucFooter ID="UcFooter1" runat="server" /></td>
+        </tr>
+    </table>
+ </td>
+  </tr>
+  </table>
+  </div>
+    
+    </form>
+    
+<%--</body>--%>
+</body>
+</html>

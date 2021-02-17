@@ -1,0 +1,58 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Admin_MasterPage" %>
+<%@ Register Src="AdminUserControl/ucAdminFooter.ascx" TagName="ucAdminFooter" TagPrefix="uc2" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <%--<title>Vehicle Hiring System</title>
+    <link href="../App_Themes/vehicle.css" rel="stylesheet" type="text/css" />--%>
+    <style type="text/css">
+        .style1
+        {
+            height: 442px;
+        }
+    </style>
+</head>
+<%--<body bgcolor="#BCCDE9" style="margin-top:0; margin-left:0; margin-right:0;">--%>
+    <body bgcolor="gray">
+    
+    <form id="form1" runat="server">
+   <div>
+   <table width="1000px" align="center" style="" bgcolor="white">
+   <tr>
+   <td>
+   
+   <table >
+        <tr>
+            
+            <td ><asp:Image ID="Image1" runat="server" />
+            <img src="../ImageRepositry/bwg.bmp"  Width="1000px"/></td>
+       
+        </tr>
+  
+    </table>
+<table style="width: 1000px">
+        <tr>
+            <td  Width="1000px" class="style1" valign="top">
+              <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <uc2:ucAdminFooter ID="UcAdminFooter1" runat="server" />
+               
+            </td>
+        </tr>
+    </table>
+   </td>
+   </tr>
+   </table>
+   
+   </div>
+    
+
+</form>
+</body>
+</html>

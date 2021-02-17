@@ -1,0 +1,119 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="~/Admin/AdminMasterPage.master.cs" Inherits="Admin_AdminMasterPage" %>
+<%@ Register Src="AdminUserControl/ucAdminFooter.ascx" TagName="ucAdminFooter" TagPrefix="uc2" %>
+<%@ Register Src="AdminUserControl/UcAdminHeader.ascx" TagName="UcAdminHeader" TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+ <%--   <title>Vehicle Hiring System</title>
+<link href="../App_Themes/vehicle.css" rel="stylesheet" type="text/css" />
+<script language ="javascript" type ="text/jscript" >
+    function onlyNumbers(evt)
+{
+    var e = event || evt;
+    var charCode = e.which || e.keyCode;
+	if ((charCode > 47 && charCode < 58))
+    return true;		             
+    else
+    return false ;		                            
+}
+function OnlyChars(evt)
+{
+    var e = event || evt;
+    var charCode = e.which || e.keyCode;
+	if ((charCode > 64 && charCode < 91)||(charCode > 96 && charCode < 123) || charCode==32)
+    return true;		             
+    else
+    return false ;	
+}
+function onlyNumbersdot(evt)
+{
+    var e = event || evt;
+    var charCode = e.which || e.keyCode;
+	if (charCode > 47 && charCode < 58 || charCode==46)
+    return true;		             
+    else
+    return false ;		                            
+}
+function onlyNumbershifen(evt)
+{
+    var e = event || evt;
+    var charCode = e.which || e.keyCode;
+	if ((charCode > 47 && charCode < 58 || charCode==45))
+    return true;		             
+    else
+    return false ;		                            
+}
+function onlyNumbersUnderScore(evt)
+{
+    var e = event || evt;
+    var charCode = e.which || e.keyCode;
+	if ((charCode > 47 && charCode < 58 || charCode==95))
+    return true;		             
+    else
+    return false ;		                            
+}
+    </script>
+    
+    --%>
+    <style type="text/css">
+        .style2
+        {
+            width: 987px;
+        }
+        .style3
+        {
+            width: 987px;
+            height: 381px;
+        }
+    </style>
+</head>
+<body bgcolor="gray">
+<form id="form1" runat="server">
+<div>
+<table width="1000px" align="center" style="" bgcolor="white">
+<tr>
+<td>
+<table>
+        <tr>
+            <td colspan="4">
+                  <asp:Image ID="Image1" runat="server" />
+                  <img src="../ImageRepositry/bwg.bmp" Width="1000px" Height="86px" </td>
+        </tr>
+  
+    </table>
+ <table>
+        <tr>
+            <td align="center">
+                <uc1:UcAdminHeader ID="UcAdminHeader1" runat="server" />
+            </td>
+        </tr>
+    </table>
+<table>
+        <tr>
+            <td class="style3">
+            
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+               
+            </td>
+        </tr>
+        <tr>
+            <td class="style2">
+                <uc2:ucAdminFooter ID="UcAdminFooter1" runat="server" />
+               
+            </td>
+        </tr>
+    </table>
+
+</td>
+</tr>
+</table>
+
+    
+
+</div>
+</form>
+</body>
+</html>
+

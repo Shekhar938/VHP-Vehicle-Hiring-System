@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="adminvishnu.master.cs" Inherits="adminvishnu" %>
+<%@ Register Src="AdminUserControl/UcAdminHeader.ascx" TagName="UcAdminHeader" TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+   
+</head>
+<body bgcolor="gray">
+    <form id="form1" runat="server">
+    <div>
+    <table width="1000px" align="center" bgcolor="white">
+    <tr>
+    <td>
+    <table>
+    <tr>
+    <td align="center" style=" width:100">
+        <asp:Label ID="lbl" runat="server" Text="Vehicles Hiring System" Font-Size="XX-Large" 
+            style="font-size: xx-large; font-family: Arial, Helvetica, sans-serif; color: #CC0066"></asp:Label>
+        </td>
+        </tr>
+        <tr>
+       
+            <td align="center">
+                <uc1:UcAdminHeader ID="UcAdminHeader1" runat="server" />
+            </td>
+        
+        </tr>
+    
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </table>
+    </td>
+    </tr>
+    </table>
+    </div>
+    
+ 
+    </form>
+</body>
+</html>

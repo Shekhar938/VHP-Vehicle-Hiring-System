@@ -1,0 +1,59 @@
+<%@ Page Language="C#" MasterPageFile="~/vishnu.master" AutoEventWireup="true" CodeFile="frmFeedBack.aspx.cs" Inherits="frmClient" Title="Untitled Page" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <br />
+    <br />
+    <table align="center" 
+        style="background-image: none; width: 360px; height: 323px;" 
+        bgcolor="#666699">
+        <tr>
+            <td align="center" colspan="4" rowspan="1" >
+                <strong><span style="font-size: 16pt; color: black; font-family: Verdana">
+                    FeedBack</span></strong></td>
+        </tr>
+        
+        <tr style="font-size: 12pt">
+            <td align="center" colspan="2">
+                &nbsp;&nbsp;
+            </td>
+        </tr>
+        <tr style="font-size: 12pt">
+            <td align="left" style="font-weight: bold; font-size: 12pt; width: 201px; color: yellow;
+                font-family: Arial Black">
+                User Name.:</td>
+            <td align="left" style="width: 55px">
+                <asp:TextBox ID="txtActNo" runat="server" Width="201px"></asp:TextBox></td>
+        </tr>
+        <tr style="font-size: 12pt">
+            <td align="left" style="font-weight: bold; font-size: 12pt; width: 201px; color: yellow;
+                font-family: Arial Black">
+                Email Id:</td>
+            <td align="left" style="width: 55px">
+                <asp:TextBox ID="txtMail" runat="server" MaxLength="50" Width="201px"></asp:TextBox></td>
+        </tr>
+        <tr>
+            <td align="left" style="font-weight: bold; font-size: 12pt; width: 201px; color: yellow;
+                font-family: Arial Black">
+                Feedback:</td>
+            <td align="left" style="width: 55px">
+                <asp:TextBox ID="txtMsg" runat="server" Height="69px" MaxLength="200" TextMode="MultiLine"
+                    Width="201px"></asp:TextBox></td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2">
+                &nbsp;&nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td align="right" colspan="2" style="background-image: none">
+                <asp:Button ID="Button1" runat="server" Text="FeedBack" Width="67px" 
+                    Font-Bold="True" Font-Names="Verdana" Font-Size="X-Small" 
+                    onclick="Button1_Click" style="height: 20px" /></td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2">
+                <asp:Label ID="Label1" runat="server" Font-Bold="True" Width="297px" 
+                    Visible="False">feedback send successfully</asp:Label></td>
+        </tr>
+    </table>
+</asp:Content>
+
